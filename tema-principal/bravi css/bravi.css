@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --success-color: #1e4626;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --white-color:#fff;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--white-color);
+    padding: 32px 16px;
+    text-align: center;
+}
+header > .first-title{
+    color: var(--primary-color);
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 4.5px;
+}
+
+main {
+    padding: 20px;
+}
+
+#theme-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+#themes-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.theme-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card img{
+    background-color: black;
+    object-fit: scale-down;
+}
+.theme-card img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.theme-card .theme-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.theme-card .theme-colors {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.theme-card .theme-colors div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+.principal-card__content .card-title{
+    font-family: 'Montserrat';
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.theme-colors .dots{
+    border-radius: 20px;
+    border: 0.2px solid #6e6666;
+}
+.theme-card .edit-btn,
+.theme-card .apply-btn,
+.theme-card .delete-btn {
+    margin-top: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+}
+
+.theme-card .delete-btn {
+    background-color: #dc3545;
+}
+
+#add-theme-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 16px 16px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.text-paleta .text-center{
+    font-family: 'Montserrat';
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+#theme-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#theme-form input {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+#theme-form > label{
+    font-family: 'Montserrat';
+    display: inline;
+    padding-right: 5px;
+}
+.save-theme-btn{
+    font-family: 'Montserrat';
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    border-color: var(--white-color);
+    color: #000;
+    font-weight: 600;
+}
+
+.apply-btn{
+    color: var(--white-color);
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+.edit-btn{
+    color: var(--secondary-color);
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+}
+.delete-btn{
+    color: var(--white-color);
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+.apply-btn, .edit-btn, .delete-btn{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    margin: 2px 0px;
+    min-width: 125px;
+}
